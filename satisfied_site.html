@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>アンブラコンセプト</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/satisfied_site.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(function(){　//ページの内容（HTMLやCSSなど）を全て読み込み準備が整ったら実行
+  $('.btnHamburger,#coverlayer,nav').on('click', function(){　//.btnHamburgerがクリックされた時の処理
+    $('.btnHamburger,#coverlayer,nav').toggleClass('is-active');　//.is-activeを付ける・外す
+  });
+});	
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+<h1>Satisfied</h1>
+</header>
+
+<div class="border1">
+<span></span>
+</div>
+	</div>
+	
+<div class="wrapper">
+	
+<!--ハンバーガーメニュー-->
+<div class="btnHamburger">
+<span class="line line_01"></span>
+<span class="line line_02"></span>
+<span class="line line_03"></span>
+</div>
+
+<!--カバーレイヤー-->
+<div id="coverlayer"></div>	
+
+<nav>
+  <ul>
+    <li><a class="underline" href="index.html">Home </a></li>
+    <li><a class="underline" href="ambra_site.html">Ambra</a></li>
+    <li><a class="underline" href="shinwa_site.html">Shinwa corporation</a></li>
+    <li><a class="underline" href="satisfied_site.html">Satisfied</a></li>
+  </ul>
+</nav>
+</div>
+<div class="border2">
+<span></span>
+</div>
+<div class="wrapper">
+<main>
+<article id="left_side">
+<section>
+<h1>Theme</h1>
+<h2>New EC site specialized YouTuber lanunch</h2>
+	<h3><span>Y</span>ouTuber特化型<span>E</span>Cサイトのインターフェース作成</h3>
+</section>
+<section>
+  <h1>Main Focus</h1>	
+  <ul>
+    <li>ボタンの視認性を意識してコンバージョンレートが上がるようにしました</li>
+    <li>従来のECサイトとは違う点をずを交えながら解説るすページを設けました</li>
+	<li>ごちゃごちゃしてる方がワクワク感がある！ドンキ方式を取り入れました</li>
+    </ul>
+</section>
+	</article>
+<article id="right_side">
+<section>
+<a href="#">
+<img src="images/satisfied_sq.png" alt="サティスファイドウェブサイト"/></a>
+</section>
+</article>
+<article id="duration">
+<section>
+<div class="content1">
+<h1>Duration</h1>
+<ul id="num"> 
+  <li>10 days</li>
+  <li><span>15</span> days</li>
+</ul>
+<picture>
+<source media="(max-width: 599px)" srcset="images/duration3_sp.svg 2x,images/duration3_sp.svg 3x">
+<source media="(max-width: 959px)" srcset="images/duration3_sp.svg 2x">
+<img src="images/duration3.svg" alt="制作期間"/>
+</picture>
+<div></div>
+  <ul id="design">
+    <li>デザインカンプ</li>
+    <li>素材制作</li>
+	</ul>
+</div>
+<div class="content2">
+<ul>
+    <li>コーディング</li>
+  </ul>	
+		<h2>Struggle</h2>
+	<h3>
+	<p>ウェブデザインを勉強し始めて1ヶ未満で初めて作ったサイトで、</p>
+	<p>初めてづくしの工程で、今では簡単にできることも時間が</p>
+	<p>かかってしまいました。</p>
+	</h3>
+</div>
+</section>
+</article>	
+</main>
+<footer><small>Copyright &copy; 2019 A.Tsuji All rights reserved.</small></footer>	
+</div>
+</body>
+</html>

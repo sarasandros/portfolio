@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>新和重機コンセプト</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/shinwa_site.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(function(){　//ページの内容（HTMLやCSSなど）を全て読み込み準備が整ったら実行
+  $('.btnHamburger,#coverlayer,nav').on('click', function(){　//.btnHamburgerがクリックされた時の処理
+    $('.btnHamburger,#coverlayer,nav').toggleClass('is-active');　//.is-activeを付ける・外す
+  });
+});	
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+<h1>Shinwa Corporation</h1>
+</header>
+
+<div class="border1">
+<span></span>
+</div>
+	</div>
+	
+<div class="wrapper">
+	
+<!--ハンバーガーメニュー-->
+<div class="btnHamburger">
+<span class="line line_01"></span>
+<span class="line line_02"></span>
+<span class="line line_03"></span>
+</div>
+
+<!--カバーレイヤー-->
+<div id="coverlayer"></div>	
+
+<nav>
+  <ul>
+    <li><a class="underline" href="index.html">Home </a></li>
+    <li><a class="underline" href="ambra_site.html">Ambra</a></li>
+    <li><a class="underline" href="shinwa_site.html">Shinwa corporation</a></li>
+    <li><a class="underline" href="satisfied_site.html">Satisfied</a></li>
+  </ul>
+</nav>
+</div>
+<div class="border2">
+<span></span>
+</div>
+<div class="wrapper">
+<main>
+<article id="left_side">
+<section>
+<h1>Theme</h1>
+<h2>Message from president of construction industory to young people</h2>
+	<h3><span>実</span>際に存在する<span>新</span>和重機株式会社のコーポレートサイト作成</h3>
+</section>
+<section>
+  <h1>Main Focus</h1>	
+  <ul>
+    <li>クライアントさんから「不良であったり、グレてしまった子を採用して育てたい」という層をターゲットにして欲しいということで、漫画やゲームぽっいサイトにして、その層の方々にも抵抗なく見てもらえるサイトを心がけました</li>
+    <li>クライアントさんから明るい感じのサイトにして欲しいという要望があったので、skrollrを使って背景色がスクロールしていくと変わるようにしました</li>
+    </ul>
+</section>
+	</article>
+<article id="right_side">
+<section>
+<a href="#">
+<img src="images/shinwa_sq.png" alt="新和重機ウェブサイト"/></a>
+</section>
+</article>
+<article id="duration">
+<section>
+<div class="content1">
+<h1>Duration</h1>
+<ul id="num">
+  <li>2 weeks</li>
+  <li>3 weeks</li>
+  <li><span>4</span> weeks</li>
+</ul>
+<picture>
+<source media="(max-width: 599px)" srcset="images/duration2_sp.svg 2x,images/duration_sp.svg 3x">
+<source media="(max-width: 959px)" srcset="images/duration2_sp.svg 2x">
+<img src="images/duration2.svg" alt="制作期間"/></picture>
+<div></div>
+  <ul id="design">
+    <li>ラフデザイン </li>
+    <li>素材制作</li>
+  </ul>
+</div>
+<div class="content2">
+<ul>
+    <li>コーディング </li>
+    <li>素材修正</li>
+  </ul>	
+		<h2>Struggle</h2>
+	<h3>
+	<p>写真と絵を浮かないように入れることが大変でした</p>
+	<p>絵もほとんど全部手書きしたので、結構時間がかかりました</p>
+	</h3>
+</div>
+<div class="content3">
+	<p>微調整</p>
+</div>
+</section>
+</article>
+<article id="original_pic">
+<section>
+<h1>original pictures</h1>
+<ul>
+<li class="flexbox_item1"><img src="images/originalpic1.png" width="230" height="205" alt=""/></li>
+<li class="flexbox_item2"><img src="images/originalpic2.jpg" width="230" height="205" alt=""/></li>
+<li class="flexbox_item3"><img src="images/originalpic3.jpg" width="230" height="205" alt=""/></li>
+<li class="flexbox_item4"><img src="images/originalpic4.png" width="230" height="205" alt=""/></li>
+</ul>
+</section>
+</article>
+</main>
+<footer><small>Copyright &copy; 2019 A.Tsuji All rights reserved.</small></footer>	
+</div>
+</body>
+</html>

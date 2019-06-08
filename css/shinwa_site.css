@@ -1,0 +1,466 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*全デバイス共通の設定*/
+.cf:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+img{
+	vertical-align: bottom;
+	max-width: 100%;
+	margin: auto;
+}
+body{
+	font-size: 100%;
+	color: #203655;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	background: #edcbc3;
+	line-height: 1.5;
+	padding: 5px;
+}
+.wrapper{
+	width: 100%;
+	margin: 0 auto;	
+}
+header{
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 71px;
+	background: #edcbc3;
+	z-index: 55;
+}
+header h1{
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.border1 span{
+	display: block;
+	height: 1px;
+	border-bottom: 1px solid #203655;
+	position: fixed;
+	top: 70px;
+	left: 0;
+	width: 100%;
+}
+#left_side{
+	padding-top: 70px;
+}
+/*クリック前のハンバーガーメニュー*/
+/* クリックエリアと位置を指定 ---------------------- */
+.btnHamburger {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 50px;
+  margin-left: -25px;
+  width: 50px; /* クリックエリアの横幅*/
+  height: 50px; /* クリックエリアの高さ*/
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* 3本線の1本ごとに共通するスタイルを指定 ---------------------- */
+.btnHamburger .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px; /* 横幅 */
+  height: 3px; /* 1本辺りの高さ */
+  background: #203655; /* 線の色 */
+
+  /* 適用するプロパティ、変化する時間、変化する速度 */
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+ }
+
+/* 3本線の各線の位置を指定 ---------------------- */
+.btnHamburger .line_01 { top: 10px; }
+.btnHamburger .line_02 { top: 24px; }
+.btnHamburger .line_03 { top: 38px; }
+
+/*クリック前の暗転するカバー*/
+#coverlayer{
+	width: 1px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: #000;
+	opacity: 0;
+	transition: 0.5s;
+	z-index: 998;
+}
+
+/*クリック後のハンバーガーメニュー*/
+/* 最上部の線のスタイル ---------------------- */
+.btnHamburger .line.is-active{
+	color: #ccac00;
+}
+.btnHamburger.is-active .line_01 {
+  top: 24px; /* 上から2番目の線の位置に変更 */
+
+  /* 線を45度回転 */
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* 上から2番目の線のスタイル ---------------------- */
+.btnHamburger.is-active .line_02 {
+  opacity: 0; /* 不透明度を下げて線を消す */
+}
+
+/* 最下部の線のスタイル ---------------------- */
+.btnHamburger.is-active .line_03 {
+  top: 24px; /* 上から2番目の線の位置に変更 */
+
+  /* 線を135度回転 */
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/*クリック後の暗転するカバー*/
+#coverlayer.is-active{
+	width: 100%;
+	opacity: 0.8;
+}
+/*navのクリック前の状態*/
+nav{
+	position: fixed;
+	top:60px;
+	left:-180px;
+	width: 180px;
+	opacity: 1;
+	z-index: 999;
+	
+}
+nav ul{
+  height: 100%;
+}
+nav ul li a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+	text-align: center;
+	box-sizing: border-box;
+	line-height: 50px;
+	
+}
+/*navのクリック後の状態*/
+nav.is-active{
+	opacity: 1;
+	top: 60px;
+	left:0;
+	right:0;
+	bottom: 0;
+	margin: auto;
+	transition: 0.5s;
+}
+
+main section h1{
+	font-size: 87.5%;
+	font-weight: bold;
+	color: rgba(208,0,61,1.00);
+}
+main section h2{
+	font-size: 200%;
+	font-weight: bold;
+}
+main section h3{
+	font-size: 125%;
+	
+}
+section h3 span{
+	color: rgba(208,0,61,1.00);
+}
+
+section h1{
+	padding-top: 10px;
+}
+section ul{
+	list-style: disc;
+	padding-left: 3.02040816%;
+	box-sizing: content-box;
+}
+section ul li{
+	font-size: 87.5%;
+}
+#right_side{
+	text-align: center;
+	padding-top: 10px;
+}
+#view a{
+	display: block;
+	text-decoration: none;
+	color: #203655;
+	font-weight: bold;
+	position: absolute;
+	z-index: 21;
+	top: 370px;
+	right: 29.5918367%;
+	border-bottom: 1px solid #d03655;
+}
+.content1{
+	position: relative;
+}
+.content1 #num{
+    list-style: none;
+	display: flex;
+}
+.content1 #num li:first-child{
+	padding-left: 45px;
+}
+.content1 #num li:nth-child(2){
+    padding-left: 60px;
+}
+.content1 #num li:last-child{
+	 padding-left: 78px;
+}
+.content1 #design{
+	list-style: none;
+	color: #edcbc3;
+	position: absolute;
+	top: 80px;
+	left: -2%;
+}
+.content1 ul li span{
+	color: #d03655;
+}
+.content2{
+	position: relative;
+}
+.content2 ul{
+	list-style: none;
+	color: #edcbc3;
+	position: absolute;
+	top: -70px;
+	left: 32%;
+}
+.content2 h2{
+	font-size: 87.5%;
+	color: #d03655;
+	position: absolute;
+	padding-top: 10px;
+	top: 0;
+	left: 0;
+}
+.content2 h3{
+	font-size: 87.5%;
+	color: #203655;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+.content3{
+	position: relative;
+}
+.content3 p{
+	color: #edcbc3;
+	position: absolute;
+	top: -70px;
+	left: 72%;
+	font-size: 87.5%;
+}
+.content3 h3{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 60.4081633%;
+}
+#design{
+	display: none;
+}
+.content2 ul{
+	display: none;
+}
+.content3{
+	display: none;
+}
+#original_pic{
+	padding-top: 110px;
+}
+#original_pic ul{
+    list-style: none;
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+	padding: 30px 0 10px 0;
+}
+footer small{
+	font-size: 75%;
+}
+.content1 #num{
+	display: none;
+}
+
+/*PC用の設定*/
+@media screen and (min-width:959px){
+	.wrapper{
+		width: 980px;
+	}
+	header h1{
+		font-size: 25px
+	}
+	#left_side{
+		width: 600px;
+		float: left;
+		padding-top: 0;
+	}
+	#right_side{
+		width: 360px;
+		float: right;
+	}
+	#duration{
+	clear: both;
+}
+	main{
+		padding-top: 120px;
+	}
+	.content1 #design{
+	list-style: none;
+	color: #edcbc3;
+	position: absolute;
+	top: 65px;
+	left: 5%;
+}
+	.content2 ul{
+	list-style: none;
+	color: #edcbc3;
+	position: absolute;
+	top: -185px;
+	left: 32%;
+}
+	.content3 p{
+	color: #edcbc3;
+	position: absolute;
+	top: -185px;
+	left: 72%;
+	font-size: 87.5%;
+}
+.content1 #num{
+    list-style: none;
+	display: flex;
+}
+.content1 #num li:first-child{
+	 padding-left:320px;
+}
+.content1 #num li:nth-child(2){
+      padding-left: 250px;
+}
+.content1 #num li:last-child{
+	 padding-left: 210px
+}
+	.content1 #design{
+	color: #edcbc3;
+	position: absolute;
+	top: 70px;
+	left: 3em;
+}
+	.content2 ul{
+	color: #edcbc3;
+	position: absolute;
+	top: -180px;
+	left: 34em;
+}
+.content2 h2{
+	font-size: 14px;
+	color: #d03655;
+	position: absolute;
+	top: -110px;
+	left: 3em;
+}
+.content2 h3{
+	font-size: 14px;
+	color: #edcbc3;
+	position: absolute;
+	top: -80px;
+	left: 3em;
+}
+	.content3{
+	position: relative;
+}
+.content3 p{
+	color: #edcbc3;
+	position: absolute;
+	top: -180px;
+	left: 55em;
+	font-size: 14px;
+}
+	#original_pic ul{
+    list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+	footer{
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+	#design{
+		display: block;
+	}
+	.content2 ul{
+		display: block;
+	}
+	.content3{
+		display: block;
+	}
+	nav{
+		position: fixed;
+		top: 60px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 980px;
+		height: 42px;
+		z-index: 1;
+		background: #edcbc3;
+	}	
+nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: #203655;
+	font-weight: bold;
+}
+nav span{
+	display: block;
+	height: 1px;
+	border-bottom: 1px solid #203655;
+}
+	.btnHamburger{
+		display: none;
+	}
+	.border1 span{
+		z-index: 5;
+	}
+	.border2 span{
+	display: block;
+	height: 1px;
+	border-bottom: 1px solid #203655;
+	position: fixed;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	z-index: 5;	
+}
+	#original_pic{
+		padding-top: 20px;
+		text-align: left;
+	}
+}

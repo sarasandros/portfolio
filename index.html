@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>ポートフォリオ</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.textillate.js"></script>
+<script type="text/javascript" src="js/jquery.lettering.js"></script>
+<script>
+$(function () {
+	$('.test').textillate();
+})
+</script>
+<script type="text/javascript" src="js/jquery.inview.js"></script>
+<script>
+	$(function() {
+	$('.list-mv07').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+		if(isInView){
+			$(this).stop().addClass('mv07');
+		}
+		else{
+			$(this).stop().removeClass('mv07');
+		}
+	});
+});
+</script>
+<script>
+$(document).ready(function() {
+  var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
+
+<script>
+$(function () {
+  $('div.long_line').each(function () {
+    var $win = $(window),
+        $winH = $win.height(),
+        $connect = $(this),
+        position = $connect.offset().top,
+        current = 0,
+        scroll;
+    $win.on('load scroll', function () {
+      scroll = $win.scrollTop();
+      current = (1 - (position - scroll) / $winH) * 2 * 100;
+      if (current > 99.9) {
+        current = 100;
+      }
+      if (scroll > position - $winH) {
+        $connect.css({width: current + '%'});
+      }
+    });
+  });
+});	
+</script>	
+</head>
+
+<body>
+<div id="wrapper">
+<header id="menu1">
+	<h1 id="top">
+		<p class="test">A.TSUJI's</p>
+        <p class="test">PORTFOLIO</p>	
+    </h1>
+</header>
+<nav>
+  <ul>
+    <li><a class="underline" href="#menu1">Top </a></li>
+    <li><a class="underline" href="#menu2">Works</a></li>
+    <li><a class="underline" href="#menu3">Skills</a></li>
+  </ul>
+</nav>
+	
+
+<main>
+<article>
+<section>
+<h1 class="test" data-in-effect="bounceInDown" id="menu2">WORKS</h1>
+</section>
+
+	
+<section id="works">
+<div id="ambra">
+<ul class="list">
+<li class="list-mv07 flexbox_item1">
+	<h2><a href="ambra_site.html">Ambra</a></h2>
+</li>
+<li class="list-mv07 flexbox_item2">
+	<h3><a class="allow" href="ambra_site.html">Concept</a></h3>
+</li>
+<li class="scale list-mv07 flexbox_item3">
+<a href="ambra_site.html">
+<img src="images/ambra_site.png" alt="アンブラウェブサイト"/> </a>
+</li>
+</ul>
+<div class="view1"><a href="ambra_site.html">View</a></div>
+<div class="contents">
+<div class="long_line"></div>
+</div>
+<span></span>
+	</div>
+
+<div id="shinwa">
+<ul class="list">
+<li class="list-mv07 flexbox_item1"><h2><a href="shinwa_site.html">Shinwa<br class="br0">Corpo<br>ration</a></h2></li>
+<li class="list-mv07 flexbox_item2"><h3><a class="allow" href="shinwa_site.html">Concept</a></h3></li>
+<li class="scale list-mv07 flexbox_item3"><a href="shinwa_site.html"><img src="images/shinwa_site.png" width="326" height="205" alt="新和重機ウェブサイト"/></a></li>
+</ul>
+<div class="view2"><a href="shinwa_site.html">View</a></div>
+<div class="contents">
+<div class="long_line"></div>
+</div>
+<span></span>
+	</div>
+
+<div id="satisfied">
+<ul class="list">
+<li class="list-mv07 flexbox_item1"><h2><a href="satisfied_site.html">Satisfied</a></h2></li>
+<li class="list-mv07 flexbox_item2"><h3><a class="allow" href="satisfied_site.html">Concept</a></h3></li>
+<li class="scale list-mv07 flexbox_item3"><a href="satisfied_site.html"><img src="images/needjp_site.png" width="326" height="205" alt="サティスファイドウェブサイト"/></a></li>
+</ul>
+<div class="view3"><a href="satisfied_site.html">View</a></div>
+<div class="contents">
+<div class="long_line"></div>
+</div>
+<span></span>
+	</div>
+</section>
+</article>
+<article>
+<section id="menu3">
+<h1>SKILLS</h1>
+</section>
+<section id="skills" class="list">
+<h2 class="list-mv07">Soft<div class="line">-</div><br>ware</h2>
+<dl id="sof">
+<dt class="list-mv07">Dreamweaver</dt>	
+<dd class="list-mv07"><img src="images/ble4.5stars.svg" alt="星4.5"/></dd>
+<dt class="list-mv07">Photoshop</dt>	
+<dd class="list-mv07"><img src="images/blue4stars.svg" alt="星4"/></dd>
+<dt class="list-mv07">Illustrator</dt>
+<dd class="list-mv07"><img src="images/blue4stars.svg" alt="星4"/></dd>
+<dt class="list-mv07">Clip Studio Paint</dt>	
+<dd class="list-mv07"><img src="images/blue3stars.svg" alt="星3"/></dd>
+</dl>
+<div class="contents">
+<div class="long_line"></div>
+<span></span>
+</div>	
+<h2 class="list-mv07">Langu<div class="line">-</div><br>ages</h2>
+<dl id="lan" class="list">
+<dt class="list-mv07">HTML</dt>	
+<dd class="list-mv07"><img src="images/red4.5stars.svg" alt="星4.5"/></dd>
+<dt class="list-mv07">CSS</dt>	
+<dd class="list-mv07"><img src="images/red4.5stars.svg" alt="星4.5"/></dd>
+<dt class="list-mv07">JavaScript</dt>	
+<dd class="list-mv07"><img src="images/res3stars.svg" alt="星3"/></dd>
+<dt class="list-mv07">PHP</dt>	
+<dd class="list-mv07"><img src="images/res2stars.svg" alt="星2"/></dd>
+</dl>
+<span></span>
+</section>	
+</article>
+</main>
+</div>
+<footer><small>Copyright &copy; 2019 . A. TSUJI reserved.</small></footer>
+<p class="pagetop"><a href="#top">▲</a></p>
+
+</body>
+</html>

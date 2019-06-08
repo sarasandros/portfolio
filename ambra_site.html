@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>アンブラコンセプト</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/ambra_site.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(function(){　//ページの内容（HTMLやCSSなど）を全て読み込み準備が整ったら実行
+  $('.btnHamburger,#coverlayer,nav').on('click', function(){　//.btnHamburgerがクリックされた時の処理
+    $('.btnHamburger,#coverlayer,nav').toggleClass('is-active');　//.is-activeを付ける・外す
+  });
+});	
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+<h1>Ambra</h1>
+</header>
+
+<div class="border1">
+<span></span>
+</div>
+	</div>
+	
+<div class="wrapper">
+	
+<!--ハンバーガーメニュー-->
+<div class="btnHamburger">
+<span class="line line_01"></span>
+<span class="line line_02"></span>
+<span class="line line_03"></span>
+</div>
+
+<!--カバーレイヤー-->
+<div id="coverlayer"></div>	
+
+<nav>
+  <ul>
+    <li><a class="underline" href="index.html">Home </a></li>
+    <li><a class="underline" href="ambra_site.html">Ambra</a></li>
+    <li><a class="underline" href="shinwa_site.html">Shinwa corporation</a></li>
+    <li><a class="underline" href="satisfied_site.html">Satisfied</a></li>
+  </ul>
+</nav>
+</div>
+<div class="border2">
+<span></span>
+</div>
+<div class="wrapper">
+<main>
+<article id="left_side">
+<section>
+<h1>Theme</h1>
+<h2>Queen of Spain produce her original perfume brand</h2>
+	<h3>ダビンチコードやインフェルノでおなじみのダンブラウンの新作オリジンに登場するスペイン王室<span>ア</span>ンブラ妃がもしも<span>香</span>水ブランドをプロデュースしたら</h3>
+</section>
+<section>
+  <h1>Main Focus</h1>	
+  <ul>
+    <li>写真や絵を綺麗に見せたかったので全画面表示を心がけました</li>
+    <li>アンブラ王妃は美術館長でもあるので様々な色を使いプリンセスの高貴さを表現しました</li>
+    <li>Collectionのページでは一目見て香水の香りと特徴がわかるよう、1ページスクロールのjQueryとスプリットデザインを取り入れました</li>
+    </ul>
+</section>
+	</article>
+<article id="right_side">
+<section>
+<a href="http://tokyo-d-plex.com/~1901tsuji/ambra/" target="_blank">
+<img src="images/ambra_sq.png" width="360" height="304" alt="アンブラウェブサイト"/> </a>
+</section>
+</article>
+<article id="duration">
+<section>
+<div class="content1">
+<h1>Duration</h1>
+<ul id="num">
+  <li>5 days</li>
+  <li>3 weeks</li>
+  <li><span>4</span> weeks</li>
+</ul>
+<picture>
+<source media="(max-width: 599px)" srcset="images/duration_sp.svg 2x,images/duration_sp.svg 3x">
+<source media="(max-width: 959px)" srcset="images/duration_sp.svg 2x">
+<img src="images/duration.svg" alt="制作期間"/>
+</picture>
+<div></div>
+  <ul id="design">
+    <li>ラフデザイン </li>
+    <li>素材制作</li>
+  </ul>
+</div>
+<div class="content2">
+<ul>
+    <li>コーディング </li>
+    <li>素材修正</li>
+  </ul>	
+		<h2>Struggle</h2>
+	<h3>
+	<p>Colllectionのページを全画面表示にするのに、スマホだと</p>
+	<p>background-attachmentとbackground-coverが</p>
+	<p>効かないので、それを使わずに全画面表示にさせたこと</p>
+	</h3>
+</div>
+<div class="content3">
+	<p>レスポンジブ対応</p>
+	<h3><img src="images/qr.png" width="130" height="130" alt=""/></h3>
+</div>
+</section>
+</article>	
+</main>
+<footer><small>Copyright &copy; 2019 A.Tsuji All rights reserved.</small></footer>	
+</div>
+</body>
+</html>
